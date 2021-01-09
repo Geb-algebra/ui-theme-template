@@ -10,31 +10,49 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+@cyan: #477082;
+@blue: #3D56A2;
+@purple: #80357F;
+@green: #587343;
+@red: #C8241D;
+@orange: #D77C41;
+@light-orange: #F6965E;
+
+@paper-base: #FFF8C2;
+@paper-darken: #F0E5B0;
+@paper-more-darken: #CFB390;
+@line-brown: #683028;
+@line-light-brown: #D6BB92;
+@inc-subtle: #C3AE7F;
+@inc-subtle-dark: #9B6B54;
+@inc-bb: #003568;
+@inc-red: #941100;
+@inc-blue: #6C78C5;
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color:           @inc-bb;
+@text-color-subtle:    @inc-subtle;
+@text-color-highlight: @line-brown;
+@text-color-selected:  @line-brown;
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    @blue;
+@text-color-success: @green;
+@text-color-warning: @orange;
+@text-color-error:   @red;
 
 // Background colors
-@background-color-info:    hsl(208, 100%, 50%);
-@background-color-success: hsl(160,  70%, 36%);
-@background-color-warning: hsl(32,   60%, 50%);
-@background-color-error:   hsl(0,    70%, 50%);
+@background-color-info:    #C5D5E4;
+@background-color-success: #ACDBB0;
+@background-color-warning: #F6965E;
+@background-color-error:   #FF978F;
 
-@background-color-highlight: lighten(@base-background-color, 5%);
-@background-color-selected:  lighten(@base-background-color, 10%);
-@app-background-color:       darken(@base-background-color, 5%);
+@background-color-highlight: @paper-darken;
+@background-color-selected:  @paper-darken;
+@app-background-color:       lighten(@paper-darken, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: @paper-base;
+@base-border-color:     @line-light-brown;
 
 // Component colors
 @pane-item-background-color: @base-background-color;
@@ -46,33 +64,33 @@
 @tool-panel-background-color: @base-background-color;
 @tool-panel-border-color:     @base-border-color;
 
-@inset-panel-background-color: lighten(@base-background-color, 4%);
+@inset-panel-background-color: @paper-darken;
 @inset-panel-border-color:     @base-border-color;
 
-@panel-heading-background-color: lighten(@base-background-color, 4%);
+@panel-heading-background-color: @paper-darken;
 @panel-heading-border-color:     @base-border-color;
 
-@overlay-background-color: lighten(@base-background-color, 5%);
+@overlay-background-color: @paper-darken;
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
-@button-background-color-selected: @button-background-color-hover;
+@button-background-color:          @paper-darken;
+@button-background-color-hover:    @paper-darken;
+@button-background-color-selected: @paper-more-darken;
 @button-border-color:              @base-border-color;
 
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: @paper-darken;
 @tab-border-color:            @base-border-color;
 
 @tree-view-background-color: @base-background-color;
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
-@ui-site-color-1: hsl(208, 100%, 50%); // blue
-@ui-site-color-2: hsl(160,  70%, 42%); // green
-@ui-site-color-3: hsl(32,   60%, 50%); // orange
+@ui-site-color-1: @blue; // blue
+@ui-site-color-2: @green; // green
+@ui-site-color-3: @orange; // orange
 @ui-site-color-4: #D831B0;             // pink
 @ui-site-color-5: #EBDD5B;             // yellow
 
@@ -91,4 +109,5 @@
 
 // Misc
 @component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: "Palatino", "Hiragino Mincho ProN";
+//'.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
